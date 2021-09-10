@@ -1,0 +1,1 @@
+A place to store coding projects for my HTML and CC course from The Tech Academy
