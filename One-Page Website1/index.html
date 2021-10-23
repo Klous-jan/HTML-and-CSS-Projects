@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>One-Page</title>
+	<meta charset="utf-8">
+	<script src="./JS/main.js" defer></script>
+	<link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body style="background-color:DarkSlateGrey;">
+	<div>
+		<div>
+			<u1>
+				<a href="#Doge_Images" id="link">
+					<li>Doge Images</li>
+				</a>
+				<a href="#Doge_Video" id="link">
+					<li>Doge Video</li>
+				</a>
+				<a href="#Doge_Contact_information" id="link">
+					<li>Doge Contact information</li>
+				</a>
+				</ui>
+		</div>
+	</div>
+	<div id="Home">
+		<video autoplay loop id="Typing_Video">
+			<source src="./vid/BackgroundVid.mp4" type="video/mp4">
+			<!--Display message if video fails to run-->
+			Your browser does not support HTML5 video.
+		</video>
+	</div>
+	<section>
+		<!-- Start Lightbox -->
+		<h2 style="text-align:center">Lightbox</h2>
+<div id="BorderCover">
+    <div class="row">
+      <div class="column">
+        <img src="./images/lightbox/img_nature.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="./images/lightbox/img_snow.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="./images/lightbox/img_mountains.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="./images/lightbox/img_lights.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+      </div>
+    </div>
+    
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+    
+        <div class="mySlides">
+          <div class="numbertext">1 / 4</div>
+          <img src="./images/lightbox/wide/img_nature_wide.jpg" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">2 / 4</div>
+          <img src="./images/lightbox/wide/img_snow_wide.jpg" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">3 / 4</div>
+          <img src="./images/lightbox/wide/img_mountains_wide.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides">
+          <div class="numbertext">4 / 4</div>
+          <img src="./images/lightbox/wide/img_lights_wide.jpg" style="width:100%">
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+    
+    
+        <div class="column">
+          <img class="Checking cursor" src="./images/lightbox/wide/img_nature_wide.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+        </div>
+        <div class="column">
+          <img class="Checking cursor" src="./images/lightbox/wide/img_snow_wide.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+        </div>
+        <div class="column">
+          <img class="Checking cursor" src="./images/lightbox/wide/img_mountains_wide.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+        </div>
+        <div class="column">
+          <img class="Checking cursor" src="./images/lightbox/wide/img_lights_wide.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+        </div>
+      </div>
+    </div>
+</div>
+			<!-- End Lightbox -->
+
+		</div>
+		<div id="Doge_Images">
+			<h1>Doge Images</h1>
+			<div>
+
+				<!-- PHOTO-CONTAINER 1 -->
+				<div>
+					<div>
+						<img src=".\Images\Doge_7.png" hight="200" width="300">
+						<div>
+							<h3>This is a picture of Doge</h3>
+							<p>Im sorry i keep using thise stupid meme as a point of referance however its easy.</p>
+						</div>
+					</div>
+					<h3>This isnt pretty, but its working</h3>
+				</div>
+			</div>
+	</section>
+	<section>
+		<div id="Doge_Video">
+			<h1>Not Doge Video</h1>
+			<div>
+
+				<!-- PHOTO-CONTAINER 1 -->
+				<div>
+					<div>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/wv69kcMcavg" frameborder="1"
+							allowfullscreen></iframe>
+						<div>
+							<h3>This is a video of Doge</h3>
+							<p>seriously... im sorry</p>
+						</div>
+					</div>
+				</div>
+			</div>
+	</section>
+	<section>
+		<div id="Doge_Contact_information">
+			<div>
+				<h1>Doge Contact information</h1>
+				<div>
+					<h1><span>Wanna contact Doge?</span>
+						<br> Hit em' up!
+					</h1>
+					<h2>
+						Please provide us with your basic contact information.
+						<!-- i essentialy ripped this part from the space station assignment -->
+					</h2>
+					<div>
+						<form action="" method="post">
+							<input class="rsvp" type="text" value="First Name">
+							<input class="rsvp" type="text" value="Last Name">
+							<input class="rsvp" type="text" value="Email Address">
+							<input class="rsvp" type="text" value="Phone Number">
+							<input type="submit" value="Submit">
+							<div class="form-spacer">
+								<label class="terms">Terms and Conditions</label>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+	</section>
+</body>
+<footer>
+	Doge&copy;
+</footer>
+
+</html>
